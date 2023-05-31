@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro Liggerini</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <div class="grid-container">
+        <nav class="grid-menu">
+            <a class="translate link-menu" id="home-link" data-key="menu-home" href="">INICIO</a>
+            <a class="translate link-menu" data-key="menu-aboutme" href="#aboutme">SOBRE MI</a>
+            <a class="translate link-menu" data-key="menu-exp" href="#">EXPERIENCIA</a>
+            <a class="translate link-menu" data-key="menu-skills" href="#">CONOCIMIENTOS</a>
+            <a class="translate link-menu" data-key="menu-contact" href="#">CONTACTO</a>
+            <div class="languageButtons">
+                <button class="spanishButton" id="spanishButton">ES</button>
+                <button class="englishButton" id="englishButton">EN</button>
+            </div>
+        </nav>
+
+        <section class="grid-intro" id="home">
+            <div class="grid-intro__img">
+                <img src="fondo.png" alt="Fondo"/>
+            </div>
+            <div class="grid-intro__texts">
+                <h2 class="grid__title">Leandro Ariel Liggerini</h2>
+                <h2 class="grid__title grid__title--transform translate" data-key="description-developer">Desarrollador Front-end</h2>
+            </div>
+        </section>
+    
+        <section class="grid-details" id="aboutme">
+            <h2 class="grid-details__title translate" data-key="title-aboutme">Sobre Mi</h2>
+            <p class="grid-details__info">
+                <span class="translate" data-key="info-aboutme-1">
+                    Mi nombre Leandro, tengo estudios incompletos en la carrera: Tecnicatura Universitaria en Desarrollo de Aplicaciones Informaticas (TUDAI) de la Universidad Nacional del Centro de la Provincia de Buenos Aires.
+                </span> 
+                <br>
+                <span class="translate" data-key="info-aboutme-2">
+                    Mi trabajo está enfocado al Front-end, pero también he interactuado con tecnologías back-end como Java Spring Boot, NodeJS y SQL Server.
+                </span> 
+            </p>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

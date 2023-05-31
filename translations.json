@@ -1,0 +1,24 @@
+{
+  "es": {
+    "description-developer": "Desarrollador Front-end",
+    "menu-home": "INICIO",
+    "menu-aboutme": "SOBRE MI",
+    "menu-exp": "EXPERIENCIA",
+    "menu-skills": "CONOCIMIENTOS",
+    "menu-contact": "CONTACTO",
+    "title-aboutme": "Sobre Mi",
+    "info-aboutme-1": "Mi nombre Leandro, tengo estudios incompletos en la carrera: Tecnicatura Universitaria en Desarrollo de Aplicaciones Informaticas (TUDAI) de la Universidad Nacional del Centro de la Provincia de Buenos Aires.",
+    "info-aboutme-2": "Mi trabajo está enfocado al Front-end, pero también he interactuado con tecnologías back-end como Java Spring Boot, NodeJS y SQL Server."
+  },
+  "en": {
+    "description-developer": "Front-end Developer",
+    "menu-home": "HOME",
+    "menu-aboutme": "ABOUT ME",
+    "menu-exp": "EXPERIENCE",
+    "menu-skills": "SKILLS",
+    "menu-contact": "CONTACT",
+    "title-aboutme": "About Me",
+    "info-aboutme-1": "My name Leandro, I have incomplete studies in the career: University Technician in Development of Computer Applications (TUDAI) of the National University of the Center of the Province of Buenos Aires.",
+    "info-aboutme-2": "My work is focused on the Front-end, but I have also interacted with back-end technologies such as Java Spring Boot, NodeJS and SQL Server."
+  }
+}

@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Prata&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prata', serif;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #3d4a6ed6;
+    display: flex;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 77.6px 650px 650px 650px;
+    width: 100vw;
+}
+
+.grid-intro{
+    grid-row: 2/3;
+    height: 100%;
+    width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(6,1fr);
+    overflow: hidden;
+}
+
+.grid-intro__img{
+    grid-row: 2/-2;
+    grid-column: 1/5;
+    clip-path: circle(0% at 50% 50%);
+    transform: translate(100%);
+    animation: showImgProfile 3s forwards, move 2s 3s forwards ;
+    display: flex;
+}
+
+.grid-intro__img img {
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.grid-intro::before{
+    content: "";
+    grid-column: 3/-1;
+    grid-row: 1/-1;
+    background-color: #3d4a6e85;
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+    animation: showBackColor 2s 4s cubic-bezier(1,.08,.76,.94) forwards;
+}
+
+.grid-intro__texts{
+    grid-row: 2/-2;
+    grid-column: 5/10;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    animation: show 2s 4s cubic-bezier(1,.08,.76,.94) forwards;
+}
+
+.grid__title{
+    font-size: 3.5rem;
+}
+
+.grid__title--transform{
+    font-size: 2.5rem;
+    transform: translate(20%);
+    animation: move 1s 2s forwards;
+}
+
+
+@keyframes showImgProfile {
+    to{
+        clip-path: circle(50% at 50% 50%);
+    }
+}
+@keyframes show {
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+@keyframes move {
+    to{
+        transform: translate(0);
+    }
+}
+@keyframes showBackColor {
+    to{
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+}
+
+.grid-details {
+    grid-row: 3/4;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin: auto auto 0 auto; 
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(8,1fr);
+    overflow: hidden;
+}
+
+.grid-details::before{
+    content: "";
+    grid-column: 3/-1;
+    grid-row: 1/-4;
+    background-color: #3d4a6e85;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    
+}
+
+.grid-details::after{
+    content: "";
+    grid-column: 1/-1;
+    grid-row: -4/-1;
+    background-color: #3d4a6e85;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.grid-details__title {
+    font-size: 2rem;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1000;
+}
+
+.grid-details__info {
+    align-self: center;
+    font-size: 1.6rem;
+    grid-column: 2/9;
+    grid-row: 3/6;
+    z-index: 1000;
+}
+
+@keyframes showBackColor2 {
+    to{
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+}
+
+.grid-menu {
+    padding-left: 3rem;
+    max-height: 77.8px;
+    position: relative;
+    grid-row: 1/2;
+    width: 100%;
+    text-align: center;
+    line-height: 4.8rem;
+    overflow: hidden;
+    z-index: 1000;
+    background-color: #3d4a6e00;
+    transition: background-color 1s ease;
+}
+
+.menu-background-fixed {
+    position: fixed !important;
+    background-color: #3d4a6e;
+    z-index: 10000;
+    transition: background-color 1s ease;
+}
+
+.grid-menu a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.grid-menu a:hover {
+    border-bottom: 2px solid white;
+}
+
+.grid-menu a, .languageButtons button {
+    font-size: 1.2rem;
+}
+
+.languageButtons {
+    float: right;
+    padding-right: 2rem;
+}
+
+.languageButtons button {
+    background-color: #3d4a6e00;
+    border: none;
+    font-family: 'Prata', serif;
+}
+
+.languageButtons button:hover {
+    cursor: pointer;
+    color: #323a4f;
+    font-weight: bold;
+}
+
+.spanishButton {
+    padding-right: 0.4rem;
+    border-right: 2px solid white !important;
+}
+
+.englishButton {
+    padding-left: 0.2rem;
+}
+
+.language-selected {
+    color: #323a4f !important;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1700px) {
+    .grid-container {
+        grid-template-rows: 77.8px 700px 700px 700px;
+    }
+}
