@@ -8,7 +8,18 @@
     "menu-contact": "CONTACTO",
     "title-aboutme": "Sobre Mi",
     "info-aboutme-1": "Mi nombre Leandro, tengo estudios incompletos en la carrera: Tecnicatura Universitaria en Desarrollo de Aplicaciones Informaticas (TUDAI) de la Universidad Nacional del Centro de la Provincia de Buenos Aires.",
-    "info-aboutme-2": "Mi trabajo está enfocado al Front-end, pero también he interactuado con tecnologías back-end como Java Spring Boot, NodeJS y SQL Server."
+    "info-aboutme-2": "Mi trabajo está enfocado al Front-end, pero también he interactuado con tecnologías back-end como Java Spring Boot y NodeJS.",
+    "title-exp": "Experiencia",
+    "info-mv": "Morning Value - Febrero 2021 - Presente",
+    "info-details-exp": "Desarrollo de un Sistema para una Fundación Educativa y un Sistema para Cabase (Cámara Argentina de Internet)",
+    "title-skills": "Conocimientos",
+    "expskills-info1": "Realicé tareas de programación front-end en el framework Angular para una fundación educativa y para Cámara Argentina de Internet (CABASE)",
+    "expskills-info2": "Uso de Git para el control de versiones en conjunto con GitLab",
+    "expskills-info3": "Trato directo con el cliente para resolver bug y/o obtener los requerimientos de las funcionalidades a desarrollar",
+    "expskills-info4": "Hago uso de Postman para probar servicios",
+    "expskills-info5": "Utilicé CSS Grid y Angular Material para CABASE y utilizo Bootstrap para la fundación",
+    "expskills-info6": "Tengo conocimientos del lenguaje Java, ya que realicé algunos servicios REST en Spring Boot",
+    "title-contact": "Contacto"
   },
   "en": {
     "description-developer": "Front-end Developer",
@@ -18,7 +29,18 @@
     "menu-skills": "SKILLS",
     "menu-contact": "CONTACT",
     "title-aboutme": "About Me",
-    "info-aboutme-1": "My name Leandro, I have incomplete studies in the career: University Technician in Development of Computer Applications (TUDAI) of the National University of the Center of the Province of Buenos Aires.",
-    "info-aboutme-2": "My work is focused on the Front-end, but I have also interacted with back-end technologies such as Java Spring Boot, NodeJS and SQL Server."
+    "info-aboutme-1": "My name is Leandro, I have incomplete studies in the career: University Technician in Development of Computer Applications (TUDAI) of the National University of the Center of the Province of Buenos Aires.",
+    "info-aboutme-2": "My work is focused on the Front-end, but I have also interacted with back-end technologies such as Java Spring Boot and NodeJS.",
+    "title-exp": "Experience",
+    "info-mv": "Morning Value - February 2021 - Today",
+    "info-details-exp": "Development of a System for an Educational Foundation and an E-Commerce App and Currently a System for Cabase (Argentine Internet Chamber)",
+    "title-skills": "Skills",
+    "expskills-info1": "I carried out front-end programming tasks in the Angular framework for an educational foundation and for the Argentine Internet Chamber (CABASE)",
+    "expskills-info2": "Using Git for version control in conjunction with GitLab",
+    "expskills-info3": "Direct contact with the client to solve a bug and/or obtain the requirements of the functionalities to be developed",
+    "expskills-info4": "I use Postman to test services",
+    "expskills-info5": "I used CSS Grid and Angular Material for CABASE and I use Bootstrap for the foundation",
+    "expskills-info6": "I have knowledge of Java language as I have done some REST services in Spring Boot",
+    "title-contact": "Contact"
   }
 }
