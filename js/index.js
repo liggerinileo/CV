@@ -67,6 +67,34 @@ document.addEventListener('DOMContentLoaded', () => {
       behavior: 'smooth'
     });
   };
+
+  const menuMobile = document.getElementById('menu-icon');
+  menuMobile.addEventListener('click', (event) => {
+    event.preventDefault();
+    onMenuClick();
+  });
+
+  function onMenuClick() {
+    let navbar = document.getElementById('navigation-bar');
+    let responsive_class_name = 'responsive'
+    navbar.classList.toggle(responsive_class_name)
+  }
+
+
+  window.addEventListener('scroll', function () {
+    const navMobile  = document.querySelector('.nav-bar'); 
+    if (isInViewport(navMobile)) {
+      navMobile.classList.remove("responsive");
+    }
+  })
+
+  function isInViewport(elem) {
+    var distance = elem.getBoundingClientRect();
+    return (
+        distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
+    );
+  }
+
 });
 
 

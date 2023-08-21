@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leandro Liggerini</title>
     <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
     <div class="grid-container">
+        <div class="page-header">
+            <a id="menu-icon" class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="navigation-bar" class="nav-bar">
+                <a class="translate mobile-link-li" id="home-link" data-key="menu-home" href=""> INICIO </a>
+                <a class="translate mobile-link-li" data-key="menu-aboutme" href="#aboutme"> SOBRE MI </a>
+                <a class="translate mobile-link-li" data-key="menu-exp" href="#exp"> EXPERIENCIA </a>
+                <a class="translate mobile-link-li" data-key="menu-skills" href="#skills"> CONOCIMIENTOS </a>
+                <a class="translate mobile-link-li" data-key="menu-contact" href="#contact"> CONTACTO </a>
+            </div>
+        </div>
+        
         <nav class="grid-menu">
             <a class="translate link-menu" id="home-link" data-key="menu-home" href="">INICIO</a>
             <a class="translate link-menu" data-key="menu-aboutme" href="#aboutme">SOBRE MI</a>
@@ -56,18 +70,18 @@
             </div>
             <div class="skills" id="skills">
                 <h2 class="grid-skills__title translate" data-key="title-skills">Conocimientos</h2>
-                <div class="logo-html"><img src="assets/logoHTML5.png" alt=""></div>
-                <p class="logo-html__title">HTML5</p>
-                <div class="logo-css"><img src="assets/logoCSS.png" alt=""></div>
-                <p class="logo-css__title">CSS</p>
-                <div class="logo-js"><img src="assets/logoJs.png" alt=""></div>
-                <p class="logo-js__title">JavaScrip</p>
-                <div class="logo-angular"><img src="assets/logoAngular.png" alt=""></div>
-                <p class="logo-angular__title">Angular</p>
-                <div class="logo-java"><img src="assets/logoJava.png" alt=""></div>
-                <p class="logo-java__title">Java</p>
-                <div class="logo-git"><img src="assets/logoGitHub.png" alt=""></div>
-                <p class="logo-git__title">Git</p>
+                <div class="logo-html logos-mobile"><img src="assets/logoHTML5.png" alt=""></div>
+                <p class="logo-html__title logos-mobile">HTML5</p>
+                <div class="logo-css logos-mobile"><img src="assets/logoCSS.png" alt=""></div>
+                <p class="logo-css__title logos-mobile">CSS</p>
+                <div class="logo-js logos-mobile"><img src="assets/logoJs.png" alt=""></div>
+                <p class="logo-js__title logos-mobile">JavaScrip</p>
+                <div class="logo-angular logos-mobile"><img src="assets/logoAngular.png" alt=""></div>
+                <p class="logo-angular__title logos-mobile">Angular</p>
+                <div class="logo-java logos-mobile"><img src="assets/logoJava.png" alt=""></div>
+                <p class="logo-java__title logos-mobile">Java</p>
+                <div class="logo-git logos-mobile"><img src="assets/logoGitHub.png" alt=""></div>
+                <p class="logo-git__title logos-mobile">Git</p>
                 <ul class="expskills-info">
                     <li class="translate" data-key="expskills-info1">Realizo tareas de programación front-end en el framework Angular para una fundación educativa y para Cámara Argentina de Internet (CABASE)</li>
                     <li class="translate" data-key="expskills-info2">Uso de Git para el control de versiones en conjunto con GitLab</li>

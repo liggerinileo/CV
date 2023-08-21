@@ -448,9 +448,58 @@ body{
     cursor: pointer;
 }
 
+.menu-icon {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-bar.responsive {
+        display: inline-grid;
+    }
+    .page-header {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        background-color: #3d4a6e;
+    }
+    .nav-bar a   {
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        height: 60px;
+        text-decoration: none;
+        padding: 1rem;
+    }
+    .menu-icon {
+        font-size: 2.7rem;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    nav {
+        display: none;
+    }
+    .nav-bar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #3d4a6e;
+        text-align: center;
+        height: 300px;
+        z-index: 999;
+    }
+}
+
 @media only screen and (min-width: 1900px) {
     .grid-container {
-        grid-template-rows: 90px 770px 950px 780px 300px;
+        grid-template-rows: 90px 770px 950px 865px 300px;
     }
     .grid-menu {
         max-height: 90px;
@@ -494,11 +543,15 @@ body{
         font-size: 1.5rem;
     }
     .grid-exp-skills {
-        grid-template-rows: repeat(13,1fr);
+        grid-template-rows: repeat(14,1fr);
     }
     .skills {
         gap: 5px;
+        grid-row: 7 / -1;
         grid-template-rows: 17% 24% 10% 8.166% 8.166% 8.166% 8.166% 8.166% 8.166%;
+    }
+    .exp {
+        grid-row: 3 / 7;
     }
     .expskills-info {
         font-size: 1.4rem;
@@ -519,5 +572,90 @@ body{
     
     .logo-mail p {
         font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-rows: 77.6px 600px 650px 900px 300px;
+    }
+    .grid-intro {
+        padding-top: 15px   ;
+    }
+    .grid-intro__img img {
+          width: 250px;
+          height: 250px;
+    }
+    .grid-intro__img {
+        grid-row: 1/3;
+        grid-column: 1/-1;
+    }
+    .grid-intro__texts{
+        grid-row: 4/-1;
+        grid-column: 1/-1;
+    }
+    .grid-intro__texts{
+        align-self: baseline;
+    }
+    .grid__title {
+        text-align: center;
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+    }
+    .grid__title--transform {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .grid-details {
+        grid-template-rows: repeat(18,1fr);
+    }
+    .grid-details__title {
+        grid-row: 3/5;
+    }
+    .grid-details__info {
+        grid-row: 6/16;
+        font-size: 1.35rem;
+    }
+    .grid-exp-skills {
+        grid-template-rows: repeat(18,1fr);
+    }
+    .exp {
+        grid-row: 3/7;
+        grid-template-rows: repeat(6,1fr);
+    }
+    .skills {
+        grid-row: 8/18;
+    }
+    .grid-exp__info {
+        grid-column: 1/-1;
+    }
+    .grid-exp__info-mv, .grid-exp__info-details {
+        font-size: 1.2rem;
+    }
+    .logo-mv, .logos-mobile {
+        display: none;
+    }
+    .skills {
+        grid-template-rows: 10% 5% 85%;
+    }
+    .expskills-info {
+        grid-row: 3/-1;
+        gap: 10px;
+    }
+    .grid-contact__frame {
+        grid-template-rows: 25% 75%;
+    }
+    .grid-contact__links {
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 100%;
+    }
+    .logo-mail {
+        grid-row: 1/2;
+        grid-column: 1/1;
+        grid-template-columns: 26% 74%;
+    }
+    .links-social {
+        grid-row: 2/3;
+        grid-column: 1/1;
     }
 }
