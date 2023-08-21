@@ -256,7 +256,7 @@ body{
 }
 
 .exp {
-    grid-row: 2/6;
+    grid-row: 3/6;
     grid-column: 2/9;
     display: grid;
     grid-template-columns: repeat(7,1fr);
@@ -620,7 +620,7 @@ body{
         grid-template-rows: repeat(18,1fr);
     }
     .exp {
-        grid-row: 3/7;
+        grid-row: 2/7;
         grid-template-rows: repeat(6,1fr);
     }
     .skills {
