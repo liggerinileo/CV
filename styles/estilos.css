@@ -498,6 +498,22 @@ body{
         height: 300px;
         z-index: 999;
     }
+
+    .grid-intro__img {
+        animation: none ;
+        display: flex;
+        clip-path: circle(50% at 50% 50%);
+        transform: unset;
+    }
+    .grid-intro__texts{
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+        animation: show 1s 1s forwards;
+    }
+
+    .grid__title--transform {
+        transform: unset;
+        animation: none;
+    }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -580,7 +596,7 @@ body{
 
 @media only screen and (max-width: 600px) {
     .grid-container {
-        grid-template-rows: 77.6px 600px 650px 900px 300px;
+        grid-template-rows: 77.6px 650px 650px 900px 300px;
     }
     .grid-intro {
         padding-top: 15px   ;
