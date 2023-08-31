@@ -596,7 +596,7 @@ body{
 
 @media only screen and (max-width: 600px) {
     .grid-container {
-        grid-template-rows: 77.6px 650px 650px 900px 300px;
+        grid-template-rows: 77.6px 650px 650px 1000px 300px;
     }
     .grid-intro {
         padding-top: 15px   ;
